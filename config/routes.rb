@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   resources :projects
 
-  get 'pages/about'
-  get 'pages/contact'
+  get 'about', to: 'pages#about'
+  get 'contact', to: 'pages#contact'
 
   resources :blogs
 
